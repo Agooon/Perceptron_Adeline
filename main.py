@@ -16,6 +16,10 @@ enter_weights_a_b = [0.1, -0.2, 0.1]
 learning_coefficient_a = 0.1
 error_threshhold = 0.5
 
+#                      #
+### Perceptron tests ###
+#                      #
+
 def threshold_test():
     learning_coefficient = 0.01
     enter_weights = [0.01, 0.01]
@@ -69,6 +73,11 @@ def learning_function_test():
         
     print('bipolarna;'+ str(epochs))
 
+
+#                   #
+### Adeline tests ###
+#                   #
+
 def random_weight_adeline_test():
     values_a_b = [[[1,0,0], 0], [[1,0,1], 0], [[1,1,0], 0], [[1,1,1], 1]]
     learning_coefficient = 0.01
@@ -96,7 +105,6 @@ def learning_coefficient_adeline_test():
         enter_weights = [0.1, 0.1, 0.1]
         _, epochs = adeline.learnModel(values_a_b, enter_weights, learning_coefficient, error_threshold, False)  
         print(str(learning_coefficient).replace('.',',') +';'+ str(epochs))
-        # print('weights:  ' + str(weights))
 
 def error_threshold_adeline_test():
     values_a_b = [[[1,0,0], 0], [[1,0,1], 0], [[1,1,0], 0], [[1,1,1], 1]]
@@ -107,7 +115,6 @@ def error_threshold_adeline_test():
         enter_weights = [0.1, 0.1, 0.1]
         weights, epochs = adeline.learnModel(values_a_b, enter_weights, learning_coefficient, error_threshold, False)  
         print(str(error_threshold).replace('.',',') +';'+ str(epochs))
-        # print('weights:  ' + str(weights))
 
 if __name__ == '__main__':    
     #                      #
