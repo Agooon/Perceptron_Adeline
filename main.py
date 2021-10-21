@@ -29,7 +29,6 @@ def threshold_test():
 
 def random_weight_test():
     learning_coefficient = 0.01
-    enter_weights = [0.01, 0.01]
     values = [[[0,0], 0], [[0,1], 0], [[1,0], 0], [[1,1], 1]]
     threshold = 1
     number_of_repeats = 10
@@ -101,7 +100,6 @@ def learning_coefficient_adeline_test():
 
 def error_threshold_adeline_test():
     values_a_b = [[[1,0,0], 0], [[1,0,1], 0], [[1,1,0], 0], [[1,1,1], 1]]
-    error_threshold = 0.55
     learning_coefficient = 0.0001
 
     print('error_threshold;epochs')
@@ -116,24 +114,30 @@ if __name__ == '__main__':
     ### Perceptron tests ###
     #                      #
 
-    # threshold_test()
+    # 2.1
+    threshold_test()
 
-    # random_weight_test()
+    # 2.2
+    random_weight_test()
 
-    # learning_coefficient_test()
+    # 2.3
+    learning_coefficient_test()
 
-    # learning_function_test()
+    # 2.4
+    learning_function_test()
 
 
     #                   #
     ### Adeline tests ###
     #                   #
 
-    # random_weight_adeline_test()
+    # 3.1
+    random_weight_adeline_test()
 
+    # 3.2
     # Nie osiągamy wyników dla wartości większych od 0.1
-    # learning_coefficient_adeline_test()
+    learning_coefficient_adeline_test()
 
-
+    # 3.3
     error_threshold_adeline_test()
         
